@@ -4,7 +4,7 @@ PS：由于 ShadowsocksR 停止更新，所以此镜像是由后继项目 [Shado
 因为 SSRR 更新缓慢，且一直处于新 dev 分支的代码提交状态，没有必要也无法区分版本。而陆续提交的代码也在不断的进行扩展（例如新增了混淆协议），所以会基于开发中的分支构建镜像。
 * akkariiin/dev([Dockerfile](https://github.com/Hentioe/docker-shadowsocksrr/blob/master/Dockerfile))
 ### 简单启动
-````bash
+```` bash
 docker run -ti -d -e TZ=Asia/Shanghai -p 443:443 \
 --env PASSWORD=${YOUR_PASSWROD} \
 --env SERVER_PORT=443 \
