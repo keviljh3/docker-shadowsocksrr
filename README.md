@@ -7,14 +7,14 @@ PS：由于 ShadowsocksR 停止更新，所以此镜像是由后继项目 [Shado
 ### 简单启动
 
 ```` bash
-docker run -ti -d -e TZ=Asia/Shanghai --restart=always -p 443:443 \
+docker run -ti -d -e TZ=Asia/Shanghai --restart=always --net=host \
 --env PASSWORD=${YOUR_PASSWROD} \
 --env SERVER_PORT=443 \
 --env OBFS=tls1.2_ticket_auth \
 --name ssrr -d bluerain/shadowsocksrr
 ````
 
-解释：上面启动的容器传递了三个变量，分别是密码、端口和混淆方式。由于是 TLS 为了更合理，所以端口变量值为了 443，至于容器的端口映射无关紧要（甚至建议直接 --net=host）。
+解释：上面启动的容器传递了三个变量，分别是密码、端口和混淆方式。由于是 TLS 为了更合理，所以端口变量值为了 443，至于容器的端口映射无关紧要（所以建议直接 --net=host）。
 
 ### 默认参数
 
