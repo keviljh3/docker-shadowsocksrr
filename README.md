@@ -8,7 +8,7 @@ PS：由于 ShadowsocksR 停止更新，所以此镜像是由后继项目 [Shado
 
 ```` bash
 docker run -ti -e TZ=Asia/Shanghai --restart=always --net=host \
---env PASSWORD=${YOUR_PASSWROD} \
+--env PASSWORD=mypasswd \
 --env SERVER_PORT=443 \
 --env OBFS=tls1.2_ticket_auth \
 --name ssrr -d bluerain/shadowsocksrr
