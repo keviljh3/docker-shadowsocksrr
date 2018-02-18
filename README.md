@@ -7,7 +7,7 @@ PS：由于 ShadowsocksR 停止更新，所以此镜像是由后继项目 [Shado
 ### 简单启动
 
 ```` bash
-docker run -ti -d -e TZ=Asia/Shanghai --restart=always --net=host \
+docker run -ti -e TZ=Asia/Shanghai --restart=always --net=host \
 --env PASSWORD=${YOUR_PASSWROD} \
 --env SERVER_PORT=443 \
 --env OBFS=tls1.2_ticket_auth \
