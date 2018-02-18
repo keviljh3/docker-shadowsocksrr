@@ -5,7 +5,7 @@ PS：由于 ShadowsocksR 停止更新，所以此镜像是由后继项目 [Shado
 * akkariiin/dev([Dockerfile](https://github.com/Hentioe/docker-shadowsocksrr/blob/master/Dockerfile))
 ### 简单启动
 ```` bash
-docker run -ti -d -e TZ=Asia/Shanghai -p 443:443 \
+docker run -ti -d -e TZ=Asia/Shanghai --restart=always -p 443:443 \
 --env PASSWORD=${YOUR_PASSWROD} \
 --env SERVER_PORT=443 \
 --env OBFS=tls1.2_ticket_auth \
