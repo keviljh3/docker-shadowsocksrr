@@ -23,7 +23,7 @@ SERVER_ADDR=0.0.0.0
 SERVER_PORT=80
 PASSWORD=sample123
 METHOD=none
-PROTOCOL=auth_chain_d
+PROTOCOL=auth_chain_f
 OBFS=http_simple
 ````
 
