@@ -1,11 +1,11 @@
 FROM alpine:3.7
 
 ENV SERVER_ADDR=0.0.0.0 \
-    SERVER_PORT=80 \
-    PASSWORD=sample123 \
+    SERVER_PORT=11015 \
+    PASSWORD=Ss123456 \
     METHOD=none \
     PROTOCOL=auth_chain_f \
-    OBFS=http_simple
+    OBFS=tls1.2_ticket_auth_compatible
 
 
 ARG BRANCH=akkariiin/dev
