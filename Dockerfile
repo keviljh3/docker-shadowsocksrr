@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 ENV SERVER_ADDR=0.0.0.0 \
     SERVER_PORT=11015 \
-    PASSWORD=Ss123456 \
+    PASSWORD=Ssr123456 \
     METHOD=none \
     PROTOCOL=auth_chain_f \
     OBFS=tls1.2_ticket_auth_compatible
