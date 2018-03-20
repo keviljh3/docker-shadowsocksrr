@@ -26,4 +26,4 @@ RUN chmod +x server_linux_amd64
 
 EXPOSE 11015/tcp 11016/udp
 CMD python shadowsocks/server.py -m $METHOD -s $SERVER_ADDR -p $SERVER_PORT -k $PASSWORD -o $OBFS -O $PROTOCOL -G 32 -g www.youku.com > /dev/null 2>&1 &
-CMD server_linux_amd64 -t "0.0.0.0:11015" -l ":11016" -key test -mtu 1300 -sndwnd 610 -rcvwnd 610 -crypt none -mode fast2 -dscp 0 -datashard 10 -parityshard 3 -nocomp > /dev/null 2>&1 &
+CMD ./server_linux_amd64 -t 0.0.0.0:11015 -l :11016 -key test -mtu 1300 -sndwnd 610 -rcvwnd 610 -crypt none -mode fast2 -dscp 0 -datashard 10 -parityshard 3 -nocomp > /dev/null 2>&1 &
