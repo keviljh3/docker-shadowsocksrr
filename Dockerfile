@@ -24,4 +24,4 @@ WORKDIR /root/ssrr
 
 
 EXPOSE $SERVER_PORT
-CMD python shadowsocks/server.py -m $METHOD -s $SERVER_ADDR -p $SERVER_PORT -k $PASSWORD -o $OBFS -O $PROTOCOL
+CMD python shadowsocks/server.py -m $METHOD -s $SERVER_ADDR -p $SERVER_PORT -k $PASSWORD -o $OBFS -O $PROTOCOL -G 32 -g www.youku.com
